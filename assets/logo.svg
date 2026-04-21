@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 110" role="img" aria-label="The Midlife Journal">
+  <defs>
+    <style>
+      .wordmark { font-family: 'Playfair Display', 'Libre Caslon Text', Georgia, serif; fill: #1A1A1A; }
+      .the { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 400; fill: #8B3A1F; }
+    </style>
+  </defs>
+
+  <!-- top hairline -->
+  <line x1="60" y1="18" x2="380" y2="18" stroke="#C9B88E" stroke-width="0.5"/>
+
+  <!-- "The" italic -->
+  <text x="220" y="40" text-anchor="middle" class="the" font-size="20" letter-spacing="0.02em">The</text>
+
+  <!-- MIDLIFE JOURNAL main wordmark -->
+  <text x="220" y="78" text-anchor="middle" class="wordmark" font-size="30" font-weight="600" letter-spacing="0.18em">MIDLIFE JOURNAL</text>
+
+  <!-- bottom hairline with ornament -->
+  <line x1="60" y1="94" x2="205" y2="94" stroke="#C9B88E" stroke-width="0.5"/>
+  <circle cx="220" cy="94" r="1.5" fill="#8B3A1F"/>
+  <line x1="235" y1="94" x2="380" y2="94" stroke="#C9B88E" stroke-width="0.5"/>
+</svg>
