@@ -16,7 +16,7 @@
 
   var CONFIG = Object.assign({
     metaPixelId:    '1835127594111086',  // same pixel as Reprieve = unified attribution
-    clarityId:      '',                   // set after Clarity project created
+    clarityId:      'wfdna0fsn0',         // Microsoft Clarity project
     brandDomain:    'reprievehealth.com', // where CTAs ultimately route
     defaultSource:  'midlifejournal',
     defaultMedium:  'listicle'
