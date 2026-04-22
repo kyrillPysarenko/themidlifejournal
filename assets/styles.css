@@ -343,6 +343,7 @@ a:hover { color: var(--text); text-decoration: underline; text-underline-offset:
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 50%;
   display: block;
 }
 .byline__meta { font-family: var(--font-meta); font-size: 0.8125rem; line-height: 1.55; }
