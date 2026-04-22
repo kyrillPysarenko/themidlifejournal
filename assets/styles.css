@@ -325,21 +325,23 @@ a:hover { color: var(--text); text-decoration: underline; text-underline-offset:
   border-bottom: 1px solid var(--hairline);
 }
 .byline__photo {
-  width: 64px; height: 64px;
+  flex: 0 0 72px;
+  width: 72px;
+  height: 72px;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   background: var(--bg-paper);
   border: 1px solid var(--hairline);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
   font-family: var(--font-meta);
   font-size: 0.625rem;
   color: var(--muted);
   letter-spacing: 0.1em;
-  flex-shrink: 0;
-  overflow: hidden;
+  position: relative;
 }
 .byline__photo img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
