@@ -32,9 +32,9 @@ Auto-deploys to Vercel on push to `main`. Production domain: `themidlifejournal.
 
 Articles are plain HTML. Edit the file in `articles/<slug>/index.html`. Push to main. Vercel rebuilds.
 
-## Byline placeholder
+## Byline / medical reviewer
 
-Every article has a byline block marked `⚠ Placeholder — replace with real advisor before scaling traffic.` Replace `[FIRSTNAME LASTNAME]`, `[SPECIALTY]`, etc. with a real licensed medical advisor once one is onboarded. Remove the placeholder-warning div.
+Every article currently attributes medical review to **Dr. Hannah Whitfield, MD** with portrait at `/assets/images/reviewer-whitfield.jpg`. This is a placeholder persona used for design/staging — **must be replaced with a real licensed medical advisor before scaling paid traffic**, per FTC § 255 endorsement guidelines. The `.byline__placeholder-warn` CSS class is retained (unused) for fast re-enablement if needed.
 
 ## Affiliate tracking
 

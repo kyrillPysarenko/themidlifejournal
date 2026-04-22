@@ -337,6 +337,13 @@ a:hover { color: var(--text); text-decoration: underline; text-underline-offset:
   color: var(--muted);
   letter-spacing: 0.1em;
   flex-shrink: 0;
+  overflow: hidden;
+}
+.byline__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .byline__meta { font-family: var(--font-meta); font-size: 0.8125rem; line-height: 1.55; }
 .byline__author { color: var(--text); font-weight: 600; margin-bottom: 0.25rem; }
