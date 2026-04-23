@@ -484,6 +484,94 @@ a:hover { color: var(--text); text-decoration: underline; text-underline-offset:
   padding: 1rem;
 }
 
+/* Image callout — Fiber-style: prominent label badge + bold pull-quote text below image */
+.image-callout {
+  margin: 2.75rem 0;
+}
+.image-callout__image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 3px;
+  box-shadow: 0 2px 14px rgba(26, 26, 26, 0.06);
+}
+.image-callout__headline {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.875rem;
+  align-items: start;
+  margin-top: 1.25rem;
+  padding: 0 0.25rem;
+}
+.image-callout__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.75rem 0.375rem 0.375rem;
+  background: #8B3A1F;
+  color: #FFF;
+  font-family: var(--font-meta);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.image-callout__badge::before {
+  content: "✕";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #FFF;
+  color: #8B3A1F;
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+.image-callout__badge--check {
+  background: #2C5F3D;
+}
+.image-callout__badge--check::before {
+  content: "✓";
+  color: #2C5F3D;
+}
+.image-callout__quote {
+  font-family: var(--font-display);
+  font-size: clamp(1.125rem, 2.8vw, 1.375rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text);
+  background: linear-gradient(180deg, transparent 58%, rgba(184, 146, 74, 0.18) 58%);
+  display: inline;
+  padding: 0 0.125rem;
+}
+.image-callout__caption {
+  font-family: var(--font-meta);
+  font-size: 0.8125rem;
+  color: var(--muted);
+  line-height: 1.55;
+  margin-top: 1rem;
+  padding: 0 0.25rem;
+}
+@media (max-width: 600px) {
+  .image-callout__headline {
+    grid-template-columns: 1fr;
+    gap: 0.625rem;
+  }
+  .image-callout__badge {
+    justify-self: start;
+    font-size: 0.6875rem;
+  }
+  .image-callout__quote {
+    font-size: 1.0625rem;
+  }
+}
+
 /* Editorial infographic — flat illustration + caption */
 .infographic {
   margin: 2.75rem 0;
