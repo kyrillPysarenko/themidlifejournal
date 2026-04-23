@@ -493,6 +493,16 @@ a:hover { color: var(--text); text-decoration: underline; text-underline-offset:
   margin: 2.75rem 0;
   text-align: center;
 }
+/* Offer variant — warmer, more prominent, for reader-exclusive discount */
+.cta-box--offer {
+  background: #FBF6EC;
+  border: 1.5px solid var(--gold-warm, #B8924A);
+  box-shadow: 0 2px 16px rgba(184, 146, 74, 0.12);
+}
+.cta-box--offer .cta-box__label {
+  color: var(--gold-warm, #B8924A);
+  font-weight: 800;
+}
 @media (min-width: 600px) { .cta-box { padding: 2.5rem 2.25rem; } }
 .cta-box__label {
   font-family: var(--font-meta);
