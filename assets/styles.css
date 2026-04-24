@@ -764,61 +764,67 @@ a:hover { color: var(--text); text-decoration: underline; text-underline-offset:
 
 /* Price-comparison block inside the final offer CTA */
 .offer-price {
-  margin: 1.25rem 0 1.5rem;
-  padding: 1.125rem 1rem 1.25rem;
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(184, 146, 74, 0.35);
+  margin: 1.5rem auto;
+  padding: 1.5rem 1rem;
+  background: #FFFFFF;
+  border: 1px solid rgba(139, 58, 31, 0.18);
   border-radius: 4px;
   text-align: center;
-}
-.offer-price__label {
-  display: block;
-  font-family: var(--font-meta);
-  font-size: 0.7rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 0.65rem;
+  max-width: 320px;
 }
 .offer-price__stack {
   display: flex;
   align-items: baseline;
   justify-content: center;
-  gap: 0.625rem 0.875rem;
-  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 .offer-price__strike {
   font-family: var(--font-display);
-  font-size: 1.375rem;
+  font-size: 1.5rem;
   color: var(--muted);
   text-decoration: line-through;
   text-decoration-thickness: 1.5px;
   text-decoration-color: rgba(139, 58, 31, 0.55);
 }
+.offer-price__arrow {
+  font-family: var(--font-meta);
+  font-size: 1.1rem;
+  color: var(--muted);
+  font-weight: 300;
+}
 .offer-price__now {
   font-family: var(--font-display);
-  font-size: 2.625rem;
+  font-size: 3rem;
   font-weight: 600;
   color: var(--text);
   line-height: 1;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 .offer-price__save {
+  display: inline-block;
+  margin-top: 1rem;
   font-family: var(--font-meta);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #8B3A1F;
-  background: rgba(139, 58, 31, 0.1);
-  padding: 0.3rem 0.55rem;
-  border-radius: 2px;
-  white-space: nowrap;
-  align-self: center;
+  color: #FFFFFF;
+  background: var(--accent);
+  padding: 0.38rem 0.85rem;
+  border-radius: 100px;
+}
+.offer-price__label {
+  display: block;
+  margin-top: 0.85rem;
+  font-family: var(--font-meta);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 @media (max-width: 420px) {
-  .offer-price__now { font-size: 2.25rem; }
-  .offer-price__save { font-size: 0.7rem; }
+  .offer-price__now { font-size: 2.5rem; }
+  .offer-price__strike { font-size: 1.25rem; }
 }
 
 /* Testimonial block (editorial) */
