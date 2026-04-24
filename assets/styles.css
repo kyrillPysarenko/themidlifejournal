@@ -732,6 +732,22 @@ a:hover { color: var(--text); text-decoration: underline; text-underline-offset:
   margin-top: 0.875rem;
   letter-spacing: 0.02em;
 }
+.cta-box__offer-note {
+  font-family: var(--font-meta);
+  font-size: 0.8125rem;
+  color: var(--gold-warm, #B8924A);
+  margin-top: 0.75rem;
+  letter-spacing: 0.02em;
+  font-style: italic;
+}
+.cta-box__offer-note strong {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--ink, #1A2828);
+  background: rgba(184, 146, 74, 0.18);
+  padding: 0.05em 0.35em;
+  border-radius: 2px;
+}
 
 /* Testimonial block (editorial) */
 .testimonial {
